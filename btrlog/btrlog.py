@@ -53,7 +53,7 @@ def get_subvolumes(mount):
 
 
 def main():
-    args = PARSER.parse_args()
+    args = build_parser().parse_args()
 
     if args.debug:
         logging.basicConfig(level=logging.DEBUG)
