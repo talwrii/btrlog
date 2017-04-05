@@ -15,7 +15,7 @@ import dateutil.parser
 LOGGER = logging.getLogger()
 
 def build_parser():
-    parser = argparse.ArgumentParser(description='If you have btrfs snapshots show how they change over time')
+    parser = argparse.ArgumentParser(prog='btrlog', description='If you have btrfs snapshots show how they change over time')
     parser.add_argument('--debug', action='store_true', help='Print debug output')
     parser.add_argument('mount', type=str, help='While system to operate on')
     parser.add_argument('commit', nargs='?', help='Show what changed in this snapshot (regular expression)', type=str)

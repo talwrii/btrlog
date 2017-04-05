@@ -27,9 +27,8 @@ btrlog /home 443
 # Usage
 
 ```
-usage: make-readme.py [-h] [--debug] [--no-files] [--all [ALL] | --single
-                      [SINGLE]]
-                      mount [commit]
+usage: btrlog [-h] [--debug] [--no-files] [--all [ALL] | --single [SINGLE]]
+              mount [commit]
 
 If you have btrfs snapshots show how they change over time
 
