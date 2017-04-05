@@ -1,0 +1,44 @@
+# btrlog
+
+Like `git log` for btrfs snapshots. Homogenous output that is easy to grep (unlike git :P)
+
+# Attribution
+
+Adapted from answers here http://serverfault.com/questions/399894/does-btrfs-have-an-efficient-way-to-compare-snapshots.
+
+# Installing
+
+```
+pip install git+https://github.com/talwrii/btrlog#egg=btrlog
+```
+
+# Examples / Cheat sheet
+
+```
+# Show what changes have recently happened to home
+btrlog /home
+
+# Show what changes have recently happened to home
+btrlog /home 443
+
+```
+
+# Usage
+
+```
+{usage}
+```
+
+
+# Alternatives and prior work
+
+- Adapted from answers here: http://serverfault.com/questions/399894/does-btrfs-have-an-efficient-way-to-compare-snapshots
+- https://github.com/sysnux/btrfs-snapshots-diff.git
+- `snapper` provides similar features but requires you to specify versiosn (and use snapper)
+
+Influenced by `git`
+
+# Caveats
+
+- This approachs use `btrfs subvolumes find-new`, there is an alternative approach using `btrfs receive`.
+- If you read this code you might object to the shell one-liners it contains. These hep fast development.
