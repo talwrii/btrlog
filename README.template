@@ -18,7 +18,7 @@ pip install git+https://github.com/talwrii/btrlog#egg=btrlog
 # Show what changes have recently happened to home
 btrlog /home
 
-# Show what changes have recently happened to home
+# Show what changed in snapshot 443
 btrlog /home 443
 
 ```
@@ -40,5 +40,5 @@ Influenced by `git`
 
 # Caveats
 
-- This approachs use `btrfs subvolumes find-new`, there is an alternative approach using `btrfs receive`.
+- This approach uses `btrfs subvolumes find-new`, there is an alternative approach using `btrfs receive`.
 - If you read this code you might object to the shell one-liners it contains. These hep fast development.
